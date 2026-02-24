@@ -1,0 +1,46 @@
+// This is a simple script to update the text content of an HTML element with the ID 'message'
+// and log a confirmation message to the console.
+
+let cusos =  document.getElementsByClassName('t-cursos');
+console.log(cusos);
+
+let numeroentero = 10;
+let decimal = 3.14;
+console.log(decimal);
+console.log(numeroentero + decimal);
+
+let msg = document.getElementById('message');
+console.log(msg);
+
+let cursos = document.getElementById('t-cursos');
+cursos.innerText = "Listado de Cursos Disponibles";
+console.log("El texto ha sido actualizado correctamente.");
+
+
+let nombre = "Juan";
+let apellido = "Pérez";
+console.log("Nombre completo: " + nombre + " " + apellido);
+console.log(`Nombre completo: ${nombre} ${apellido}`);
+
+let edad = 25;
+console.log(`Edad: ${edad} años`);
+let esEstudiante = true;
+console.log(`¿Es estudiante? ${esEstudiante}`);
+let materias = ["Matemáticas", "Historia", "Ciencias"];
+console.log("Materias:", materias);
+let persona = {
+    nombre: "Ana",
+    edad: 22,
+    esEstudiante: true
+};
+console.log("Persona:", persona);
+console.log(`Nombre: ${persona.nombre}, Edad: ${persona.edad}, ¿Es estudiante? ${persona.esEstudiante}`);
+
+
+let numerogrande = 12345678901234567890n;
+console.log(numerogrande);
+console.log(typeof numerogrande);
+
+let simbolo = Symbol('miSimbolo');
+console.log(simbolo);
+console.log(typeof simbolo);

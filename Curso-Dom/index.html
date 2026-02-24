@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Define el tipo de documento como HTML5 -->
+
+<html lang="es">
+<!-- Etiqueta raíz del documento HTML, idioma español -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres (evita errores con tildes y ñ) -->
+
+    <title>Manipulación del DOM y BOM</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlaza el archivo CSS externo -->
+</head>
+
+<body>
+    <!-- Cuerpo del documento, todo lo visible -->
+
+    <h1 id="titulo">Manipulación del DOM</h1>
+    <!-- h1: encabezado principal -->
+    <!-- id="titulo": identificador único para acceder desde JavaScript -->
+
+    <p class="texto">Este texto será modificado con JavaScript</p>
+    <!-- p: párrafo -->
+    <!-- class="texto": clase reutilizable para selección con JS o CSS -->
+
+    <input type="text" id="inputTexto" placeholder="Escribe algo aquí">
+    <!-- input: campo de texto -->
+    <!-- type="text": permite escribir texto -->
+    <!-- id="inputTexto": identificador para JS -->
+    <!-- placeholder: texto guía -->
+
+    <button id="btnCambiar">Cambiar texto</button>
+    <!-- button: botón -->
+    <!-- id="btnCambiar": se usará para detectar el clic -->
+
+    <button id="btnColor">Cambiar color</button>
+    <!-- Botón para cambiar estilos -->
+
+    <button id="btnAlerta">Mostrar alerta (BOM)</button>
+    <!-- Botón para usar funciones del BOM -->
+
+    <button id="btnRedirigir">Ir a Google</button>
+    <!-- Botón para redirección usando window.location -->
+
+    <ul id="lista"></ul>
+    <!-- ul: lista desordenada -->
+    <!-- id="lista": donde se agregarán elementos dinámicamente -->
+
+    <script src="/practicas/probando.js"></script>
+    <!-- Importa el archivo JavaScript -->
+</body>
+</html>
