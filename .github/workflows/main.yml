@@ -1,42 +1,14 @@
-name: CI/CD Pipeline
 
+name: Test
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [20.x]  # LTS estable
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run tests
-        run: npm test --if-present
-
-      - name: Build project
-        run: npm run build --if-present
-
-      - name: Deploy to production
-        if: github.ref == 'refs/heads/main'
-        run: |
-          echo "🚀 Deploying to production..."
-          # Aquí iría tu script real de deploy
+      - name: Echo the message
+        run: echo "Hola, este es un mensaje de prueba"
+       
+       
