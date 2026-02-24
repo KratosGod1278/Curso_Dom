@@ -1,0 +1,61 @@
+//number
+let numero = 42;
+console.log(numero);
+console.log(typeof numero);
+
+console.log("Hola mundo");
+
+
+//variablelet nombre = "Oscar";
+let nombre = "Oscar";
+console.log(nombre);
+console.log(typeof nombre);
+
+//variable const
+const PI = 3.14159;
+console.log(PI);
+console.log(typeof PI);
+
+//variable var
+var edad = 30;
+console.log(edad);
+console.log(typeof edad);
+
+/Operadores aritméticos
+let a = 10;
+let b = 5;  
+console.log(a + b); // Suma
+console.log(a - b); // Resta
+console.log(a * b); // Multiplicación
+console.log(a / b); // División 
+console.log(a % b); // Módulo
+console.log(a ** b); // Exponenciación  
+
+
+//operadores de comparacion
+let edad = 12;
+
+if (edad >= 18) {
+    console.log("Eres mayor de edad");
+} else {
+    console.log("Eres menor de edad");
+}
+
+
+//operadores asignacion
+let x = 10;
+x += 5; // Equivalente a x = x + 5
+console.log(x); // Imprime 15  
+
+
+//contenadacion de cadenas
+let saludo = "Hola";
+let nombreUsuario = "Oscar";
+let mensaje = saludo + " " + nombreUsuario;
+console.log(mensaje); // Imprime "Hola Oscar!"
+
+
+//forma moderna con backsticks
+let producto = "laptop";
+let precio = 800;
+console.log(`El precio de la ${producto} es ${precio} dólares`); // Imprime "El precio de la laptop es 800 dólares
